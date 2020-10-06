@@ -1,4 +1,7 @@
 [mail function]
+<?php 
+phpinfo();
+?>
 ; For Win32 only.
 SMTP = localhost
 smtp_port = 25
