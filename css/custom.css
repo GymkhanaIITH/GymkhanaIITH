@@ -5,6 +5,8 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
 
-
-
-
+.team-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
