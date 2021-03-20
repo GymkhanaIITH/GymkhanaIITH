@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Year Book 2020</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        :root{
+        --primary-bg:#FA4444;
+        }
+
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        }
+
+        body{
+        font-family: 'Roboto', sans-serif;
+        }
+
+        /* nav wrapper styling */
+        #nav-wrapper{
+        position:absolute;
+        right:-20vmax;
+        top:-20vmax;
+        background:var(--primary-bg);
+        width:100vmax;
+        height:100vmax;
+        border-radius:50%;
+        transition:500ms cubic-bezier(0,0.2,0.4,1);
+        }
+
+        /* menu btn styling */
+        #menu-btn{
+        position:absolute;
+        right:5%;
+        top:5%;
+        z-index:1000;
+        
+        padding:5px;
+        }
+
+        .bar{
+        display:block;
+        width:40px;
+        height:5px;
+        background:black;
+        margin:7px 0;
+        }
+
+        nav{
+        position:absolute;
+        top:45%;
+        left:40%;
+        transform:translate(-50%,-50%);
+        }
+
+        #nav-links li{
+        list-style-type:none;
+        }
+
+        #nav-links{
+        display:flex;
+        font-size:64px;
+        }
+
+        #nav-links a{
+        display:inline-block;
+        text-decoration:none;
+        color:white;
+        padding:5px 0;
+        transition:all 300ms ease-in;
+        position:relative;
+        
+        }
+
+        #nav-links a::after{
+        position:absolute;
+        top:50%;
+        left:105%;
+        content:" ";
+        height:60px;
+        transform:translateY(-50%);
+        width:8px;
+        background:white;
+        opacity:0;
+        transition:300ms ease-in;
+        }
+
+
+        #nav-links:hover a{
+        
+        opacity:.5;
+        }
+
+        #nav-links a:hover{
+        opacity:1;
+        color:white;
+        }
+
+        #nav-links a:hover::after{
+        opacity:1;
+        }
+
+
+        /* #nav-links a:not(:hover){
+        color:#d3d3d3;
+        } */
+
+
+        .menu-closed{
+        width:0 !important;
+        height:0 !important;
+        
+        }
+
+        .main{
+            padding-top: 50px;
+        }
+
+        #firstpage{
+           width : 70%;
+           height : 800px
+        }
+
+        #logo{
+            top : 0;
+            left : 0;
+            margin: 7px 0;
+        }
+
+        #logo img{
+            padding-top:10px;
+            width : 70px;
+            height : 70px;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div id="menu-btn" >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    
+      <div id = "logo"><img src="yearbook/yearbook/logo.png" alt=""></div>
+    <div id="nav-wrapper" class="menu-closed">
+      
+
+      
+    <nav>
+      <div id="nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="yearbook/yearbook.html">Yearbook</a></li>
+
+      </ul>
+      </div>
+    </nav>
+
+    
+</div>
+    <div class="container main">
+        <center><img id = "firstpage" src="yearbook/yearbook/IIT HYD Complete File Single Pages_page-0001.jpg" alt=""></center>
+        <h1>Institude Yearbook.</h1>
+        <p>lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium asperiores architecto nulla, est excepturi nihil porro nostrum quas? Odit tenetur placeat ipsam, officia assumenda deserunt et qui non iure sint?</p>
+
+    </div>
+    <center><embed type="text/html" src="yearbook/yearbook.html"  width="1436" height="1000"></center>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('#menu-btn').addEventListener('click',function(){
+            document.querySelector('#nav-wrapper').classList.toggle('menu-closed');
+            });
+        document.querySelector('#nav-links').addEventListener('click',function(){
+            document.querySelector('#nav-wrapper').classList.toggle('menu-closed');
+            });
+            
+    </script>
+  </body>
+</html>
