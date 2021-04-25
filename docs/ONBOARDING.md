@@ -1,7 +1,7 @@
 ## Gymkhana IITH On-Boarding Guide. 
 ### Pre-requisites 
 - Basic Knowledge of git and a Github Account
-- Some experience of using the command line and ssh
+- Some experience of using the command line and `ssh`
 - Linux is recommended but not necessary. In case you use Windows, please have git and ssh pre-installed. The following section on command line tips may not work on a Windows Machine.
 
 ### Website Infrastructure.
@@ -9,7 +9,7 @@
 The website is deployed on a container provided by Computer Centre (also known as ISAC). 
 The Container runs Ubuntu 20.04 LTS as it's operating system.
 
-The website is deplyed using the NGINX Webserver. 
+The website is deployed using the NGINX Webserver. 
 It uses `git` as a version control system and for deployment. 
 
 ### Making Changes 
@@ -19,6 +19,10 @@ The website is currently written in HTML, CSS and vanilla JS.
 
 To test it locally , `git clone` the repository onto your local machine. 
 Make changes locally and test them. Make sure that there is cross-browser compatibility, i.e. changes work on both Chrome and Firefox. 
+
+Commit the changes and push to the deploy branch. Try to only have a linear stream of commits, i.e. no forced update in the deploy branch. 
+
+**Note:** Writing good commit messages is recommended.
 
 #### Command Line specific Tips: 
 
@@ -57,4 +61,4 @@ Then, you can ssh in using the server credentials. After you're logged into the 
 
 A nginx webserver is used to deply the website online. The Nginx configuration is present in `/etc/nginx/sites-enabled/default`. 
 
-The location root is `/var/www/html`. Currently, this a symlink to /home/ee18btech11049/html/ . 
+The location root is `/var/www/html`. 
