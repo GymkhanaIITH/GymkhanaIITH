@@ -2,7 +2,7 @@
 session_start();
 error_reporting(0);
 require 'common.php';
-echo"<br><br><br><br>";
+echo"<br/><br/><br/><br/>";
 echo "<center><h3> WELCOME </h3></center>";
 $sessionvar=$_SESSION['email'];
 echo"<h4 align=center> $sessionvar</h4>";
