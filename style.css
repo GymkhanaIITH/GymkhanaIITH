@@ -9786,6 +9786,8 @@ body:not(.device-touch) .clients-grid li a {
 .team-image img {
 	display: block;
 	width: 100%;
+	/* width: 200px; */
+	/* height: 200px; */
 }
 
 .team-desc { text-align: center; }
